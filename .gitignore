@@ -1,0 +1,33 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Microsoft Office temporary / lock files
+~$*
+*.tmp
+
+# OneDrive conflict copies
+*OneDrive-conflict*
+*-Copy*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# Tableau temporary files
+*.tmp
+*.bak
+
+# Editors
+.vscode/
+.idea/
+*.swp

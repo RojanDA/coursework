@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aliement</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .container {
+        width: 1200px;
+        border: 3px solid purple;
+        margin: auto;
+        font-family: "Alegreya", serif;
+        background-color: rgb(183, 118, 223);
+      }
+      .item {
+        border: 2px solid gray;
+        margin: 5px 2px;
+        padding: 12px 3px;
+        background: rgb(248, 241, 231);
+      }
+      #fruits {
+        float: left;
+        width: 47%;
+      }
+
+      #computer {
+        float: right;
+        width: 50%;
+      }
+
+      #stationary {
+        float: left;
+        /* clear is use to clear overlab of the float element for eg \:
+         clear: left; will clear left float element 
+         right will clear right float element 
+         and both will clear both */
+      }
+      #Glasses {
+        clear: both;
+      }
+      p,
+      h3 {
+        /* text-align: right;
+        text-align: left;
+        text-align: center; */
+        text-align: justify;
+      }
+      .wel {
+        margin: auto;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="wel">welcome to my store</h1>
+      <div id="fruits" class="item">
+        <h3>fruits</h3>
+        <p id="furitspara" class="para">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
+          voluptatem nesciunt odio ratione, dolores est natus sequi quo
+          accusantium assumenda quidem at voluptates exercitationem voluptas rem
+          deserunt nemo obcaecati. Consequatur.
+        </p>
+      </div>
+      <div id="computer" class="item">
+        <h3>computer</h3>
+        <p id="computerpara" class="para">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
+          voluptatem nesciunt odio ratione, dolores est natus sequi quo
+          accusantium assumenda quidem at voluptates exercitationem voluptas rem
+          deserunt nemo obcaecati. Consequatur.
+        </p>
+      </div>
+      <div id="stationary" class="item">
+        <h3>stationary</h3>
+        <p id="stationarypara" class="para">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
+          voluptatem nesciunt odio ratione, dolores est natus sequi quo
+          accusantium assumenda quidem at voluptates exercitationem voluptas rem
+          deserunt nemo obcaecati. Consequatur.
+        </p>
+      </div>
+      <div id="Glasses" class="item">
+        <h3>Glasses</h3>
+        <p id="Glassespara" class="para">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
+          voluptatem nesciunt odio ratione, dolores est natus sequi quo
+          accusantium assumenda quidem at voluptates exercitationem voluptas rem
+          deserunt nemo obcaecati. Consequatur.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

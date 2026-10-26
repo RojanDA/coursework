@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Height, width, borders and backgrounds</title>
+    <style>
+      #opara {
+        color: aqua;
+        background-color: red;
+        height: 30px;
+        width: 500px;
+        border-width: 4px;
+        border-color: rgb(88, 209, 32);
+        border-style: solid;
+        border-radius: 14px;
+      }
+      #spara {
+        color: aqua;
+        background-color: red;
+        height: 30px;
+        width: 500px;
+        border-top: 4px solid pink;
+        border-bottom: 4px solid yellowgreen;
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+
+      #tpara {
+        color: aquamarine;
+        height: 30px;
+        width: 500px;
+        background-image: url("/image/1.jpg");
+        background-repeat: no-repeat; /*repeat-x and repeat-y will make it repeat on x and y */
+        background-position: center center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 id="opara">Height, width, borders and backgrounds</h2>
+    <p>
+      this is the paragraph to learn about height, width, borders and background
+    </p>
+    <h2 id="spara">Height, width, borders and backgrounds</h2>
+    <p>
+      this is the paragraph to learn about height, width, borders and background
+    </p>
+    <h2 id="tpara">Height, width, borders and backgrounds</h2>
+    <p>
+      this is the paragraph to learn about height, width, borders and background
+    </p>
+  </body>
+</html>

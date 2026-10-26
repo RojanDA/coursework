@@ -1,0 +1,1 @@
+# wap to check if an element exixts in a tuple 

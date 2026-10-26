@@ -1,0 +1,87 @@
+body{
+    margin:0px;
+    padding: 0px;
+    margin-top: 10px;
+    background-image: url(rojan.jpg);
+    background-repeat: no-repeat;
+}
+h2{
+    font-size: 50px;
+    color: antiquewhite;
+    margin-left: 50px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 80%;
+    height: 90%;
+    border: 3px solid white;
+    margin-left: 20px;
+}
+  b{
+    color: antiquewhite;
+    font-size: 19px;
+  }
+  .bb{
+    color: antiquewhite;
+    font-size: 16px;
+  }
+.cnt{
+    display: block;
+    align-items: center;
+    
+    width: 30%;
+    height: 80%;
+    margin-left: 650px;
+    margin-top: 150px;
+    
+}
+  
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  
+ 
+  button {
+    background-color: #046aaa;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra style for the cancel button (red) */
+  .signbtn {
+    width: auto;
+    padding: 14px 20px;
+    background-color: #00ee43;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  #hadder h2 span{
+    color: #ff004f;
+  }
+  

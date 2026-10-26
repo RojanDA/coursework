@@ -1,0 +1,1 @@
+# wap to get the value of a key in a dictionary, returing a default value if the key is not found.

@@ -1,0 +1,1 @@
+# wap to create a dictonary and print its keys and values

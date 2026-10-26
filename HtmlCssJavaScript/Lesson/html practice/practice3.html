@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forms</title>
+  </head>
+  <body>
+    <h2>forms</h2>
+    <form action="backgrounf.php">
+      <div><label for="Name">Name</label> <input type="text" name="myname" id="Name" /></div><br>
+      <div><label for="Email">Email</label> <input type="email" id="Email"/></div><br>
+      <div><label for="Number">Number</label> <input type="number" id="Number"/></div><br>
+      <div><label for="Date">BirthDate</label> <input type="date" name="mydate" id="Date"/></div><br>
+      <div>
+        gender: male<input type="radio" name="gender" />
+         female<input type="radio" name="gender" />
+         other<input type="radio" name="gender" />
+      <br>
+      <br>
+      <div>Are you 18+: <input type="checkbox" name="mydate" /></div><br>
+      <div>feedback:<br> <textarea name="mytext" cols="30" rows="2"></textarea></div><br>
+      <div>
+        <label for="Qualification">Qualification</label>
+    <select name="Qualification" id="Qualification">
+        <option value="SEE" >SEE</option>
+        <option value="+2" >+2</option>
+        <option value="Bec" >Bechalor</option>
+    </select></div>
+    <br>
+      <div>
+        <input type="submit" value="submit" />
+        <input type="reset" value="reset" />
+      </div>
+    </form>
+  </body>
+</html>

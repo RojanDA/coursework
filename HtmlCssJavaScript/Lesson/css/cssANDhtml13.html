@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Tutorial</title>
+  </head>
+  <style>
+    .container {
+      height: 600px;
+      width: 100%;
+      border: 2px solid black;
+      display: flex;
+
+      /* flex properties for flex container */
+      /* defult vale of flex direction is row  */
+      /* flex-direction: row;--- it we float element in row */
+      flex-direction: row;
+      /* flex-direction: column;--- it will float element in column */
+      /* flex-direction: column; */
+      /* flex-direction: row-reverse;--- it will float the element in reverse row that is from the other side  */
+      /* flex-direction: row-reverse; */
+      /* same but in column  */
+
+      /* flex-direction: column-reverse; */
+      /* flex-wrap: wrap ;--- it will wrap the element and make web side flexible */
+      flex-wrap: wrap;
+      /* flex-flow: row wrap;--- it willset both flex direction:  and flex-wrap: at a same time */
+      /* flex-flow: row-reverse wrap; */
+
+      /* justify-content: will justify the contant in horizontal direction */
+      /*justify-content: space-between;  it will provide space between the element */
+      /*justify-content: space-evenly;   it will provide the space infoent of the first element */
+      /*justify-content: space-around; it will give each element a space */
+      /*justify-content: center;  it will help us to aline item in center */
+
+      /* align-items:  properties; */
+      /* align-items: will justify the contant in vertical direction */
+      align-items: center; /*it will center the element vertically*/
+      align-items: flex-end; /*it will sent the element at the end of div*/
+      align-items: flex-start; /*it will bring element at the top but we dont have to put this because by defualt it provide that features*/
+      align-items: stretch; /*it will evenly stretch each element verticallly*/
+    }
+    .item {
+      height: 200px;
+      width: 200px;
+      border: 2px solid blue;
+      background-color: tomato;
+      padding: 3px;
+      margin: 10px;
+    }
+    #item-1 {
+      /* higher the order, last it will show in the container   */
+      /* flex-grow: 3; -- it will grow the element, higher the vale the more it grows  */
+      /* flex-shrink:3;--- it will shrink the element, her the value the more it will shrink  */
+      /* flex-basis: 120px;  -- when flex-direction: is set to row then flex-basis: will control width
+       but if flex-direction:  is set in column then it will control height  */
+      flex-basis: 260px;
+    }
+    #item-2 {
+      flex: 2 2 230px; /* flex:2 2 230px; means we have given flex grow=2 and flex-shrink=2 and flex-basis=23opx*/
+      /* align-self: ;-------- we can align element everywhere we want */
+    }
+  </style>
+  <body>
+    <h2>This is Flexbox</h2>
+    <div class="container">
+      <div class="item" id="item-1">1st box</div>
+      <div class="item" id="item-2">2nd box</div>
+      <div class="item" id="item-3">3rd box</div>
+      <div class="item" id="item-4">4th box</div>
+      <div class="item" id="item-5">5th box</div>
+      <div class="item" id="item-6">6th box</div>
+    </div>
+  </body>
+</html>

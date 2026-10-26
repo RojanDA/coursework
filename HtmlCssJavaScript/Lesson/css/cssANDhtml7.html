@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=`, initial-scale=1.0" />
+    <title>Box model</title>
+    <style>
+      body {
+        background-color: rgb(173, 144, 201);
+      }
+      * {
+        box-sizing: border-box; /* it will ame the box constant to the width*/
+        margin: 0;
+        padding: 0;
+      }
+      /* *{}use to set the every element present in this html */
+      .container {
+        background-color: aquamarine;
+        border: 3px solid rgb(64, 6, 119);
+        padding: 9px;
+        margin: 12px 10px;
+        /* we can give padding form any side for eg */
+        /* padding-top: 34px; */
+        /* padding-right: 34; */
+        /* margin-right: 34px; */
+
+        /* likewise left right top bottom from any side */
+
+        /* we can give paddding like this padding: 24px 34px 32px 44px; 
+
+        in this 24xp is top, 34px is right, 32px is bottom, and 44px is left*/
+
+        /* we can also define padding: y(top/bottom) x(left/right); */
+        border-radius: 14px;
+        width: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>this is my heading</h2>
+      <p id="first">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ex
+        tempora ipsa sequi repellat velit consectetur accusamus, rerum
+        voluptatem veniam, blanditiis esse laudantium voluptates, fugiat
+        corporis dolor ducimus. Fugiat, architecto.
+      </p>
+    </div>
+    <div class="container">
+      <h2>this is my heading 1</h2>
+      <p id="second">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ex
+        tempora ipsa sequi repellat velit consectetur accusamus, rerum
+        voluptatem veniam, blanditiis esse laudantium voluptates, fugiat
+        corporis dolor ducimus. Fugiat, architecto.
+      </p>
+    </div>
+    <div class="container">
+      <h2>this is my heading 2</h2>
+      <p id="third">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ex
+        tempora ipsa sequi repellat velit consectetur accusamus, rerum
+        voluptatem veniam, blanditiis esse laudantium voluptates, fugiat
+        corporis dolor ducimus. Fugiat, architecto.
+      </p>
+    </div>
+  </body>
+</html>

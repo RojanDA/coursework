@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>before amd after pseudo selecter</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        color: aqua;
+        font-family: "Baloo Bhaijaan 2", cursive;
+      }
+      header::before {
+        background: url("/image/5.jpg") no-repeat center center/cover;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.45;
+      }
+      .navigation {
+        font-size: 20px;
+        display: flex;
+      }
+      li {
+        list-style: none;
+        padding: 13px 13px;
+      }
+      section {
+        font-family: "Baloo Bhaijaan 2", cursive;
+        height: 400px;
+        margin: 3px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      section::before {
+        content: "this is a content";
+      }
+      section::after {
+        content: "this is another content";
+      }
+      h3 {
+        font-size: 4em;
+      }
+      p {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="navigation">
+          <li class="item">Home</li>
+          <li class="item">About us</li>
+          <li class="item">Service</li>
+          <li class="item">Contact Us</li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <h3>Welcome to my page</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta id sequi
+        obcaecati facilis? Accusamus sapiente aperiam recusandae dolores
+        consectetur at quod dolor impedit sed asperiores quam placeat, minima ab
+        aliquam esse fugiat magnam. Repellat.
+      </p>
+    </section>
+    <hr />
+  </body>
+</html>

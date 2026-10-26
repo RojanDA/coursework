@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid media</title>
+    <style>
+      .container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+          "nav nav nav nav"
+          "section section section aside"
+          "footer footer footer footer";
+      }
+      .bdr {
+        border: 2px solid black;
+        background-color: bisque;
+        border-radius: 10px;
+      }
+      nav {
+        grid-area: nav;
+      }
+      section {
+        grid-area: section;
+      }
+      aside {
+        grid-area: aside;
+      }
+      footer {
+        grid-area: footer;
+        text-align: center;
+      }
+      .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .menu span {
+        padding: 3px;
+        margin: 0px 20px;
+      }
+      @media (max-width: 300px) {
+        body {
+          background-color: aqua;
+        }
+        .container {
+          grid-template-areas:
+            "nav nav nav nav"
+            "section section section section"
+            "aside aside aside aside"
+            "footer footer footer footer";
+        }
+        aside {
+          display: none;
+        }
+        .menu {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      @media (min-width: 300px) and (max-width: 500px) {
+        body {
+          background-color: aquamarine;
+        }
+        .container {
+          grid-template-areas:
+            "nav nav nav nav"
+            "section section section section"
+            "aside aside aside aside"
+            "footer footer footer footer";
+        }
+        .menu {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      @media (min-width: 500px) and (max-width: 800px) {
+        body {
+          background-color: bisque;
+        }
+        .container {
+          grid-template-areas:
+            "nav nav nav nav"
+            "section section section section"
+            "aside aside aside aside"
+            "footer footer footer footer";
+        }
+      }
+      @media (min-width: 800px) {
+        body {
+          background-color: turquoise;
+        }
+      }
+      .bb {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      .bb {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <nav class="bdr">
+        <div class="menu">
+          <span>Home</span>
+          <span>Contact</span>
+          <span>About</span>
+          <span>Service</span>
+        </div>
+      </nav>
+      <section class="bdr">
+        <div class="bb">
+          <h2>learn css in hindi</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia
+            exercitationem totam modi placeat quam est sit, inventore
+            necessitatibus vel distinctio repudiandae, porro eum, eius dicta
+            explicabo aut eveniet pariatur illo dolorum sed et provident.
+          </p>
+        </div>
+      </section>
+      <aside class="bdr">
+        <h2>learn more about us</h2>
+      </aside>
+      <footer class="bdr">
+        <h3>copyright rojan 2020</h3>
+      </footer>
+    </div>
+  </body>
+</html>

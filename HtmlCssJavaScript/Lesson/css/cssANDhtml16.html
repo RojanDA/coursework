@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>more on selector</title>
+    <style>
+      h1 {
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+      }
+      div p {
+        /* this function will be applied to evert p which is under div*/
+        color: aqua;
+        background-color: brown;
+      }
+      div > p {
+        /* this function will be applied to those p who come after the div*/
+        /* if p is right inside div then this css will be applied */
+        color: yellow;
+        background-color: teal;
+      }
+      div + p {
+        /* if p is right after div i.e p is thr next sibling of div */
+        color: tomato;
+        background-color: turquoise;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is More on selector</h1>
+    <div class="container">
+      <div class="row">
+        <ul>
+          <li><p>this is inner paragraph</p></li>
+        </ul>
+        <p>this is the paragraph</p>
+      </div>
+      <p>This is aslo another paragraph</p>
+    </div>
+    <p>This is outer most paragraph</p>
+  </body>
+</html>

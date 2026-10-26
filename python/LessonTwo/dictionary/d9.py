@@ -1,0 +1,1 @@
+# wap to count the number of occurrences of each word in a given sentence using a dictionary.

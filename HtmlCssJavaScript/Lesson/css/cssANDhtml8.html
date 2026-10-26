@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo selecter</title>
+    <style>
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      a:hover {
+        color: blue;
+        background-color: azure;
+      }
+      a:visited {
+        background-color: rgb(231, 240, 57);
+      }
+      a:active {
+        background-color: darkblue;
+      }
+      .container {
+        border: 2px bold red;
+        background-color: aqua;
+        padding: 34px;
+        margin: 34px;
+      }
+      .btn {
+        background-color: brown;
+        padding: 6px;
+        border: none;
+        cursor: pointer;
+        font-size: 13px;
+        border-radius: 4px;
+      }
+      #rr:hover {
+        color: blue;
+        background-color: azure;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="cont1" class="container">
+      <h2>this is my heading</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum
+        recusandae tenetur tempore, voluptate repudiandae voluptatibus iusto
+        vero at tempora quam eius cupiditate explicabo? Sint soluta nobis
+        dolorum! Impedit eaque consequuntur aspernatur labore explicabo?
+      </p>
+      <a href="https://yahoo.com" class="btn">read more</a>
+      <button id="rr" class="btn">contact us</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* navbar costamizattion */
+body{
+    background-color: rgb(254, 33, 33);
+    margin: 0px;
+    padding: 0px;
+}
+#navbar{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 65px;
+}
+.manu_line{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.2rem;
+    justify-content: space-between;
+    height: 25px;
+    width: 30px;
+}
+.manu_line .bars{
+height: 3px;
+width: 100%;
+background-color: red;
+border-radius: 10px;
+}
+.logo img{
+    width: 100px;
+    height: 50px;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.logo .aka{
+  color: red;
+  margin: 0px 0px;
+  margin-left: 20px;
+  text-shadow: 2px 2px 8px white;
+  font-size: 36px;
+}
+.menubar{
+    display: flex;
+    margin: 0px 0px;
+    margin-right: 50px;
+    list-style: none;
+}
+.menubar li {
+   padding: 10px 30px;
+   font-size: 22px;
+}
+.menubar li a {
+   text-decoration: none;
+   color: red;
+   padding: 7px;
+   border-radius: 15px;
+}
+.menubar li a:hover {
+   background-color: red;
+   color: white;
+}
+/* main body home section */
+.home{
+    background: url('aka_wall2.jpg')no-repeat center center/cover;
+    width: 100%;
+    height: 500px;
+    margin: 0px 0px;
+    top: 0px;
+}
+.home .home_front{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+.home .home_front h1{
+    color: aliceblue;
+   margin-top: 100px;
+   margin-bottom: 15px;
+   font-size: 40px;
+   text-shadow: 2px 2px 12px red;
+}
+.home .home_front p{
+   margin-top: 15px;
+   text-shadow: 2px 2px 10px black;
+   color: white;
+   font-size: 20px;
+   text-align: center;
+   font-weight: bold;
+}
+#btn1{
+    margin-top: 40px;
+    padding: 3px 8px;
+    border-radius: 10px;
+    background-color: red;
+    color: antiquewhite;
+}
+#btn1:hover{
+    
+    background-color: black;
+    color: red;
+    cursor: pointer;
+}
+
+#position{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#position .home_front{
+    width: 50%;
+}
+
+/* member section  */
+#main_heading{
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 40px;
+    text-shadow: 2px 2px 5px white;
+}
+#member_section_individual img{
+    height: 300px;
+    width: 400px;
+}
+#member_section_individual{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    background-color: rgb(27, 27, 27);
+    border-radius: 20px;
+    margin: 10px;
+}
+#member_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
+
+}
+#pg_font{
+    color: antiquewhite;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+#second_heading{
+    text-align: center;
+    color: antiquewhite;
+    text-shadow: 2px 2px 2px red;
+}

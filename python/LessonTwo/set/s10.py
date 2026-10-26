@@ -1,0 +1,1 @@
+# wap to remove all element from a set

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rojan's fitness</title>
+    <link rel="stylesheet" href="/webpage/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* csss reset */
+      body {
+        font-family: "Alegreya", serif;
+        margin: 0px;
+        padding: 0px;
+        background: url("image/gym.jpg");
+      }
+      .left {
+        display: inline-block;
+        position: absolute;
+        top: 16px;
+        left: 34px;
+      }
+      .mid {
+        display: block;
+        margin: 20px auto;
+        width: 40%;
+      }
+      .right {
+        display: inline-block;
+        position: absolute;
+        top: 30px;
+        right: 34px;
+      }
+      .navbar {
+        display: inline-block;
+      }
+      .navbar li {
+        display: inline-block;
+        font-size: 25px;
+      }
+      .navbar li a {
+        color: black;
+        text-decoration: none;
+        padding: 34px 17px;
+      }
+      .navbar li a:hover,
+      .navbar li a.active {
+        color: rgb(24, 90, 145);
+        text-decoration: underline;
+      }
+      .left img {
+        width: 65px;
+        padding-left: 30px;
+      }
+      .divv {
+        text-align: center;
+        font-size: 20px;
+        text-decoration: solid;
+        color: rgb(40, 4, 74);
+      }
+      .btn {
+        margin: 0px 9px;
+        background-color: rgb(183, 177, 177);
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 14px;
+        cursor: pointer;
+        font-size: 17px;
+        font-family: "Alegreya", serif;
+      }
+      .btn:hover {
+        background: none;
+        color: rgb(255, 255, 255);
+      }
+      .frm {
+        display: inline-block;
+        margin: 42px 62px;
+        padding: 8px 12px;
+        border: 3px solid rgb(255, 255, 255);
+
+        background-blend-mode: overlay;
+      }
+      .frmm {
+        font-size: 26;
+        color: #00d5ff;
+        font-weight: bold;
+      }
+      .text_style {
+        color: red;
+        text-shadow: 2px 2px black;
+      }
+      .btnn {
+        background-color: rgb(183, 177, 177);
+        border-radius: 14px;
+        cursor: pointer;
+        font-size: 15px;
+        font-family: "Alegreya", serif;
+      }
+      .btnn:hover {
+        background: rgb(0, 0, 0);
+        color: rgb(183, 177, 177);
+      }
+      .but {
+        position: relative;
+        margin-bottom: 12px;
+      }
+
+      .butt {
+        position: absolute;
+        left: 35%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <!-- left  box for logo -->
+      <div class="left">
+        <img src="image/aave-aave-logo.png" />
+        <div class="divv"><b>Advance Fitness</b></div>
+      </div>
+      <!-- mid div for navbar -->
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Fitness calculator</a></li>
+          <li><a href="#">Offer</a></li>
+        </ul>
+      </div>
+      <!-- right div for contact -->
+      <div class="right">
+        <button class="btn">Call Us</button>
+        <button class="btn">Email Us</button>
+      </div>
+    </header>
+    <div class="frm">
+      <h2 class="text_style">Fill the form to resister</h2>
+      <form action="practice1.html" class="frmm">
+        <div>
+          <label for="Name">Full_Name</label><br /><input
+            type="text"
+            name="Myname"
+            id="Name"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="Date">Date of birth</label><br /><input
+            type="date"
+            name="date of birth"
+            id="Date"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="Email">Email</label><br /><input
+            type="email"
+            name="email"
+            id="Email"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="Telephone">Telephone</label><br /><input
+            type="number"
+            name="contact"
+            id="Telephone"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="Address">Address</label><br /><input
+            type="text"
+            name="address"
+            id="Address"
+          />
+        </div>
+        <br />
+        <div>
+          Gender: Male<input type="radio" name="gender" /> Female<input
+            type="radio"
+            name="gender"
+          />
+          Other<input type="radio" name="gender" />
+        </div>
+        <div>
+          About yours goal<br /><textarea
+            name="introduction"
+            cols="30"
+            rows="2"
+          ></textarea>
+        </div>
+        <br />
+        <div class="but">
+          <div class="butt">
+            <button class="btnn">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

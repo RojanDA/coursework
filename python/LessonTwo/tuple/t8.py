@@ -1,0 +1,1 @@
+# wap to join tuples and print the result

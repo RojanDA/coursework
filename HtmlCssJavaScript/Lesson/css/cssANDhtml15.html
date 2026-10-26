@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries</title>
+    <style>
+      .box {
+        background-color: rgb(255, 0, 0);
+        color: rgb(255, 255, 255);
+        font-size: 72px;
+        text-align: center;
+        display: none;
+      }
+      /* if we put only screen and after @media then it will only show to the screen size we put  */
+      @media (max-width: 300px) {
+        #box-1 {
+          display: block;
+          background-color: black;
+        }
+      }
+      @media (min-width: 300px) and (max-width: 500px) {
+        #box-2 {
+          display: block;
+          background-color: rgba(91, 142, 15, 0.781);
+        }
+      }
+      @media (min-width: 500px) and (max-width: 800px) {
+        #box-3 {
+          display: block;
+          background-color: rgba(15, 66, 142, 0.992);
+        }
+      }
+      @media (min-width: 800px) {
+        #box-4 {
+          display: block;
+          background-color: tomato;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" id="box-1">I am iphon</div>
+    <div class="box" id="box-2">I am Tablet</div>
+    <div class="box" id="box-3">I am laptop</div>
+    <div class="box" id="box-4">I am desktop</div>
+  </body>
+</html>
